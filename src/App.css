@@ -1,38 +1,78 @@
 .App {
-  text-align: center;
+  text-align: left;
+  font-family: 'Arial', sans-serif;
+  padding: 20px; /* added padding */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App-content { /* modified from App-header for better naming */
+  background-color: #f7f7f7; /* light grey for slight contrast */
+  padding: 20px; /* spacing around content */
+  border-radius: 5px; /* optional: for rounded corners */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  color: #4a47a3; /* using header color from previous style */
+  margin-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc; /* light grey border */
+  border-radius: 5px;
+}
+
+.checkbox-group {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-bottom: 20px; /* added spacing */
+}
+
+input[type="checkbox"] {
+  margin-left: 10px;
+}
+
+.acquire-button {
+  background-color: #2196f3;
+  border: none;
   color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.acquire-button:hover {
+  background-color: #0b7dda;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.token-info {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #f1f1f1; /* Light grey background */
+  color: #333; /* Dark text color */
+  width: 100%;
+  max-width: 500px;
+}
+
+.token-info h2 {
+  margin-bottom: 10px;
+}
+
+.token-info pre {
+  white-space: pre-wrap; /* Ensures the text wraps */
+  word-wrap: break-word; /* Breaks long words */
 }

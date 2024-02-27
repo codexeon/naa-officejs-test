@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0"
+    xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides"
+    xsi:type="TaskPaneApp">
+    <Id>5d49687c-66c4-4292-b9a7-1527a2fe9088</Id>
+    <Version>1.7.0.0</Version>
+    <ProviderName>Microsoft Corporation</ProviderName>
+    <DefaultLocale>en-US</DefaultLocale>
+    <DisplayName DefaultValue="Wikipedia" />
+    <Description DefaultValue="Find and quote related information from Wikipedia." />
+    <!--Icon
+    for your add-in. Used on installation screens and the add-ins dialog -->
+    <IconUrl
+        DefaultValue="https://fa000000110.resources.office.net/f7024bdc-7caf-4ca8-807d-2908f09640d6/1.0.0.4/en-us_web/apps/wikipedia/images/wikipedia_32x32.png" />
+    <HighResolutionIconUrl
+        DefaultValue="https://fa000000110.resources.office.net/f7024bdc-7caf-4ca8-807d-2908f09640d6/1.0.0.4/en-us_web/apps/wikipedia/images/wikipedia_64x64.png" />
+    <SupportUrl
+        DefaultValue="https://learn.microsoft.com/en-us/javascript/api/overview?view=common-js-preview"></SupportUrl>
+    <!--BeginTaskpaneMode
+    integration. Office 2013 and any client that doesn't understand commands will use this section.  
+    This section will also be used if there are no VersionOverrides -->
+    <Hosts>
+        <Host Name="Document" />
+        <Host Name="Workbook" />
+    </Hosts>
+    <DefaultSettings>
+        <SourceLocation
+            DefaultValue="https://localhost" />
+    </DefaultSettings>
+    <Permissions>ReadWriteDocument</Permissions>
+</OfficeApp>  
