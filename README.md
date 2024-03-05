@@ -1,4 +1,4 @@
-# Getting Started
+## Setup
 
     npm install
     npx office-addin-dev-certs install
@@ -16,3 +16,6 @@ Set the following registry key to sideload manifest:
 [HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\WEF\Developer]
 "manifest1"=<path to manifest on disk>
 ```
+
+## Start the dev server
+    npm start
