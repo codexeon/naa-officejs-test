@@ -18,7 +18,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "cross-env HTTPS=true PORT=443 react-scripts start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -43,6 +43,6 @@
   },
   "devDependencies": {
     "@types/office-js": "^1.0.376",
-    "cross-env": "^7.0.3"
+    "office-addin-dev-certs": "^1.12.2"
   }
 }
